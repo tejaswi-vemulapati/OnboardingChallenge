@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A72B310F29EC21EC007ED642 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A72B310E29EC21EB007ED642 /* GoogleService-Info.plist */; };
+		A72B311229EC2265007ED642 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A72B311129EC2265007ED642 /* FirebaseAuth */; };
+		A72B311429EC2265007ED642 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A72B311329EC2265007ED642 /* FirebaseDatabase */; };
+		A72B311629EC2265007ED642 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A72B311529EC2265007ED642 /* FirebaseDatabaseSwift */; };
+		A72B311829EC2265007ED642 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A72B311729EC2265007ED642 /* FirebaseFirestore */; };
+		A72B311A29EC2265007ED642 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A72B311929EC2265007ED642 /* FirebaseFirestoreSwift */; };
+		A72B311C29EC2265007ED642 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A72B311B29EC2265007ED642 /* FirebaseStorage */; };
+		A72B311E29EC24DE007ED642 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B311D29EC24DE007ED642 /* UserService.swift */; };
+		A72B312029EC272F007ED642 /* PostFetchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B311F29EC272F007ED642 /* PostFetchModel.swift */; };
+		A72B312329EC2A54007ED642 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B312229EC2A54007ED642 /* Posts.swift */; };
+		A7E8E4A229EB3C8F006D6A68 /* OnePassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E8E4A129EB3C8F006D6A68 /* OnePassApp.swift */; };
+		A7E8E4A429EB3C8F006D6A68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E8E4A329EB3C8F006D6A68 /* ContentView.swift */; };
+		A7E8E4A629EB3C90006D6A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7E8E4A529EB3C90006D6A68 /* Assets.xcassets */; };
+		A7E8E4A929EB3C90006D6A68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7E8E4A829EB3C90006D6A68 /* Preview Assets.xcassets */; };
+		A7E8E4B329EB3C90006D6A68 /* OnePassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E8E4B229EB3C90006D6A68 /* OnePassTests.swift */; };
+		A7E8E4BD29EB3C90006D6A68 /* OnePassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E8E4BC29EB3C90006D6A68 /* OnePassUITests.swift */; };
+		A7E8E4BF29EB3C90006D6A68 /* OnePassUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E8E4BE29EB3C90006D6A68 /* OnePassUITestsLaunchTests.swift */; };
+		A7E8E4D029EB6225006D6A68 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E8E4CF29EB6225006D6A68 /* SwiftUIView.swift */; };
+		A7E8E4D229EB6925006D6A68 /* editposts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E8E4D129EB6925006D6A68 /* editposts.swift */; };
+		A7E8E4DD29EB6B5D006D6A68 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E8E4DC29EB6B5D006D6A68 /* FeedView.swift */; };
+		A7E8E4E029EB6C65006D6A68 /* PostsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E8E4DF29EB6C65006D6A68 /* PostsRowView.swift */; };
+		A7E8E4E229EB71F8006D6A68 /* EditPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E8E4E129EB71F8006D6A68 /* EditPostView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7E8E4AF29EB3C90006D6A68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7E8E49629EB3C8F006D6A68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7E8E49D29EB3C8F006D6A68;
+			remoteInfo = OnePass;
+		};
+		A7E8E4B929EB3C90006D6A68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7E8E49629EB3C8F006D6A68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7E8E49D29EB3C8F006D6A68;
+			remoteInfo = OnePass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A72B310D29EC21DD007ED642 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "OnePass/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A72B310E29EC21EB007ED642 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "OnePass/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A72B311D29EC24DE007ED642 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		A72B311F29EC272F007ED642 /* PostFetchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFetchModel.swift; sourceTree = "<group>"; };
+		A72B312229EC2A54007ED642 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		A7E8E49E29EB3C8F006D6A68 /* OnePass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnePass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7E8E4A129EB3C8F006D6A68 /* OnePassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnePassApp.swift; sourceTree = "<group>"; };
+		A7E8E4A329EB3C8F006D6A68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A7E8E4A529EB3C90006D6A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7E8E4A829EB3C90006D6A68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A7E8E4AE29EB3C90006D6A68 /* OnePassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnePassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7E8E4B229EB3C90006D6A68 /* OnePassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnePassTests.swift; sourceTree = "<group>"; };
+		A7E8E4B829EB3C90006D6A68 /* OnePassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnePassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7E8E4BC29EB3C90006D6A68 /* OnePassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnePassUITests.swift; sourceTree = "<group>"; };
+		A7E8E4BE29EB3C90006D6A68 /* OnePassUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnePassUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A7E8E4CF29EB6225006D6A68 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		A7E8E4D129EB6925006D6A68 /* editposts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editposts.swift; sourceTree = "<group>"; };
+		A7E8E4DC29EB6B5D006D6A68 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		A7E8E4DF29EB6C65006D6A68 /* PostsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRowView.swift; sourceTree = "<group>"; };
+		A7E8E4E129EB71F8006D6A68 /* EditPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPostView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7E8E49B29EB3C8F006D6A68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72B311A29EC2265007ED642 /* FirebaseFirestoreSwift in Frameworks */,
+				A72B311629EC2265007ED642 /* FirebaseDatabaseSwift in Frameworks */,
+				A72B311829EC2265007ED642 /* FirebaseFirestore in Frameworks */,
+				A72B311429EC2265007ED642 /* FirebaseDatabase in Frameworks */,
+				A72B311229EC2265007ED642 /* FirebaseAuth in Frameworks */,
+				A72B311C29EC2265007ED642 /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E8E4AB29EB3C90006D6A68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E8E4B529EB3C90006D6A68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A72B312129EC2A37007ED642 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A72B312229EC2A54007ED642 /* Posts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A7E8E49529EB3C8F006D6A68 = {
+			isa = PBXGroup;
+			children = (
+				A7E8E4A029EB3C8F006D6A68 /* OnePass */,
+				A7E8E4B129EB3C90006D6A68 /* OnePassTests */,
+				A7E8E4BB29EB3C90006D6A68 /* OnePassUITests */,
+				A7E8E49F29EB3C8F006D6A68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7E8E49F29EB3C8F006D6A68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7E8E49E29EB3C8F006D6A68 /* OnePass.app */,
+				A7E8E4AE29EB3C90006D6A68 /* OnePassTests.xctest */,
+				A7E8E4B829EB3C90006D6A68 /* OnePassUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7E8E4A029EB3C8F006D6A68 /* OnePass */ = {
+			isa = PBXGroup;
+			children = (
+				A7E8E4D729EB6AD6006D6A68 /* Extensions */,
+				A7E8E4D629EB6AD3006D6A68 /* Model */,
+				A7E8E4D429EB6AC6006D6A68 /* Service */,
+				A7E8E4D329EB6ABE006D6A68 /* Core */,
+				A7E8E4D129EB6925006D6A68 /* editposts.swift */,
+				A7E8E4CF29EB6225006D6A68 /* SwiftUIView.swift */,
+				A7E8E4A129EB3C8F006D6A68 /* OnePassApp.swift */,
+				A7E8E4A529EB3C90006D6A68 /* Assets.xcassets */,
+				A72B310E29EC21EB007ED642 /* GoogleService-Info.plist */,
+				A7E8E4A729EB3C90006D6A68 /* Preview Content */,
+			);
+			path = OnePass;
+			sourceTree = "<group>";
+		};
+		A7E8E4A729EB3C90006D6A68 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A7E8E4A829EB3C90006D6A68 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7E8E4B129EB3C90006D6A68 /* OnePassTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7E8E4B229EB3C90006D6A68 /* OnePassTests.swift */,
+			);
+			path = OnePassTests;
+			sourceTree = "<group>";
+		};
+		A7E8E4BB29EB3C90006D6A68 /* OnePassUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A72B310D29EC21DD007ED642 /* GoogleService-Info.plist */,
+				A7E8E4BC29EB3C90006D6A68 /* OnePassUITests.swift */,
+				A7E8E4BE29EB3C90006D6A68 /* OnePassUITestsLaunchTests.swift */,
+			);
+			path = OnePassUITests;
+			sourceTree = "<group>";
+		};
+		A7E8E4D329EB6ABE006D6A68 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A72B312129EC2A37007ED642 /* Models */,
+				A7E8E4D829EB6B1B006D6A68 /* Components */,
+				A7E8E4D929EB6B24006D6A68 /* Feed */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A7E8E4D429EB6AC6006D6A68 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A72B311D29EC24DE007ED642 /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A7E8E4D629EB6AD3006D6A68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7E8E4D729EB6AD6006D6A68 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A7E8E4D829EB6B1B006D6A68 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A7E8E4DE29EB6C3B006D6A68 /* Posts */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A7E8E4D929EB6B24006D6A68 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				A7E8E4DB29EB6B47006D6A68 /* View */,
+				A7E8E4DA29EB6B41006D6A68 /* ViewModels */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		A7E8E4DA29EB6B41006D6A68 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A7E8E4A329EB3C8F006D6A68 /* ContentView.swift */,
+				A72B311F29EC272F007ED642 /* PostFetchModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A7E8E4DB29EB6B47006D6A68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7E8E4DC29EB6B5D006D6A68 /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7E8E4DE29EB6C3B006D6A68 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				A7E8E4DF29EB6C65006D6A68 /* PostsRowView.swift */,
+				A7E8E4E129EB71F8006D6A68 /* EditPostView.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7E8E49D29EB3C8F006D6A68 /* OnePass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7E8E4C229EB3C90006D6A68 /* Build configuration list for PBXNativeTarget "OnePass" */;
+			buildPhases = (
+				A7E8E49A29EB3C8F006D6A68 /* Sources */,
+				A7E8E49B29EB3C8F006D6A68 /* Frameworks */,
+				A7E8E49C29EB3C8F006D6A68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnePass;
+			packageProductDependencies = (
+				A72B311129EC2265007ED642 /* FirebaseAuth */,
+				A72B311329EC2265007ED642 /* FirebaseDatabase */,
+				A72B311529EC2265007ED642 /* FirebaseDatabaseSwift */,
+				A72B311729EC2265007ED642 /* FirebaseFirestore */,
+				A72B311929EC2265007ED642 /* FirebaseFirestoreSwift */,
+				A72B311B29EC2265007ED642 /* FirebaseStorage */,
+			);
+			productName = OnePass;
+			productReference = A7E8E49E29EB3C8F006D6A68 /* OnePass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7E8E4AD29EB3C90006D6A68 /* OnePassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7E8E4C529EB3C90006D6A68 /* Build configuration list for PBXNativeTarget "OnePassTests" */;
+			buildPhases = (
+				A7E8E4AA29EB3C90006D6A68 /* Sources */,
+				A7E8E4AB29EB3C90006D6A68 /* Frameworks */,
+				A7E8E4AC29EB3C90006D6A68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7E8E4B029EB3C90006D6A68 /* PBXTargetDependency */,
+			);
+			name = OnePassTests;
+			productName = OnePassTests;
+			productReference = A7E8E4AE29EB3C90006D6A68 /* OnePassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7E8E4B729EB3C90006D6A68 /* OnePassUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7E8E4C829EB3C90006D6A68 /* Build configuration list for PBXNativeTarget "OnePassUITests" */;
+			buildPhases = (
+				A7E8E4B429EB3C90006D6A68 /* Sources */,
+				A7E8E4B529EB3C90006D6A68 /* Frameworks */,
+				A7E8E4B629EB3C90006D6A68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7E8E4BA29EB3C90006D6A68 /* PBXTargetDependency */,
+			);
+			name = OnePassUITests;
+			productName = OnePassUITests;
+			productReference = A7E8E4B829EB3C90006D6A68 /* OnePassUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7E8E49629EB3C8F006D6A68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A7E8E49D29EB3C8F006D6A68 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					A7E8E4AD29EB3C90006D6A68 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = A7E8E49D29EB3C8F006D6A68;
+					};
+					A7E8E4B729EB3C90006D6A68 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = A7E8E49D29EB3C8F006D6A68;
+					};
+				};
+			};
+			buildConfigurationList = A7E8E49929EB3C8F006D6A68 /* Build configuration list for PBXProject "OnePass" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7E8E49529EB3C8F006D6A68;
+			packageReferences = (
+				A72B311029EC2265007ED642 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = A7E8E49F29EB3C8F006D6A68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7E8E49D29EB3C8F006D6A68 /* OnePass */,
+				A7E8E4AD29EB3C90006D6A68 /* OnePassTests */,
+				A7E8E4B729EB3C90006D6A68 /* OnePassUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7E8E49C29EB3C8F006D6A68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E8E4A929EB3C90006D6A68 /* Preview Assets.xcassets in Resources */,
+				A7E8E4A629EB3C90006D6A68 /* Assets.xcassets in Resources */,
+				A72B310F29EC21EC007ED642 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E8E4AC29EB3C90006D6A68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E8E4B629EB3C90006D6A68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7E8E49A29EB3C8F006D6A68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E8E4DD29EB6B5D006D6A68 /* FeedView.swift in Sources */,
+				A7E8E4A429EB3C8F006D6A68 /* ContentView.swift in Sources */,
+				A7E8E4D229EB6925006D6A68 /* editposts.swift in Sources */,
+				A7E8E4E029EB6C65006D6A68 /* PostsRowView.swift in Sources */,
+				A72B311E29EC24DE007ED642 /* UserService.swift in Sources */,
+				A7E8E4A229EB3C8F006D6A68 /* OnePassApp.swift in Sources */,
+				A72B312029EC272F007ED642 /* PostFetchModel.swift in Sources */,
+				A72B312329EC2A54007ED642 /* Posts.swift in Sources */,
+				A7E8E4E229EB71F8006D6A68 /* EditPostView.swift in Sources */,
+				A7E8E4D029EB6225006D6A68 /* SwiftUIView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E8E4AA29EB3C90006D6A68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E8E4B329EB3C90006D6A68 /* OnePassTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E8E4B429EB3C90006D6A68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E8E4BF29EB3C90006D6A68 /* OnePassUITestsLaunchTests.swift in Sources */,
+				A7E8E4BD29EB3C90006D6A68 /* OnePassUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7E8E4B029EB3C90006D6A68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7E8E49D29EB3C8F006D6A68 /* OnePass */;
+			targetProxy = A7E8E4AF29EB3C90006D6A68 /* PBXContainerItemProxy */;
+		};
+		A7E8E4BA29EB3C90006D6A68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7E8E49D29EB3C8F006D6A68 /* OnePass */;
+			targetProxy = A7E8E4B929EB3C90006D6A68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A7E8E4C029EB3C90006D6A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7E8E4C129EB3C90006D6A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7E8E4C329EB3C90006D6A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OnePass/Preview Content\"";
+				DEVELOPMENT_TEAM = N76FV4P4AL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daxpatel.OnePass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7E8E4C429EB3C90006D6A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OnePass/Preview Content\"";
+				DEVELOPMENT_TEAM = N76FV4P4AL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daxpatel.OnePass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7E8E4C629EB3C90006D6A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N76FV4P4AL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daxpatel.OnePassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnePass.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OnePass";
+			};
+			name = Debug;
+		};
+		A7E8E4C729EB3C90006D6A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N76FV4P4AL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daxpatel.OnePassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnePass.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OnePass";
+			};
+			name = Release;
+		};
+		A7E8E4C929EB3C90006D6A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N76FV4P4AL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daxpatel.OnePassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OnePass;
+			};
+			name = Debug;
+		};
+		A7E8E4CA29EB3C90006D6A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N76FV4P4AL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daxpatel.OnePassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OnePass;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7E8E49929EB3C8F006D6A68 /* Build configuration list for PBXProject "OnePass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7E8E4C029EB3C90006D6A68 /* Debug */,
+				A7E8E4C129EB3C90006D6A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7E8E4C229EB3C90006D6A68 /* Build configuration list for PBXNativeTarget "OnePass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7E8E4C329EB3C90006D6A68 /* Debug */,
+				A7E8E4C429EB3C90006D6A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7E8E4C529EB3C90006D6A68 /* Build configuration list for PBXNativeTarget "OnePassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7E8E4C629EB3C90006D6A68 /* Debug */,
+				A7E8E4C729EB3C90006D6A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7E8E4C829EB3C90006D6A68 /* Build configuration list for PBXNativeTarget "OnePassUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7E8E4C929EB3C90006D6A68 /* Debug */,
+				A7E8E4CA29EB3C90006D6A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A72B311029EC2265007ED642 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A72B311129EC2265007ED642 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A72B311029EC2265007ED642 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A72B311329EC2265007ED642 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A72B311029EC2265007ED642 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		A72B311529EC2265007ED642 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A72B311029EC2265007ED642 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		A72B311729EC2265007ED642 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A72B311029EC2265007ED642 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		A72B311929EC2265007ED642 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A72B311029EC2265007ED642 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		A72B311B29EC2265007ED642 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A72B311029EC2265007ED642 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A7E8E49629EB3C8F006D6A68 /* Project object */;
+}
